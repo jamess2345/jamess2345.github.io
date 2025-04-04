@@ -10,11 +10,10 @@
       padding: 0;
       background-color: #f0f8ff;
       font-family: Arial, sans-serif;
-      text-align: center;
       height: 100vh;
-      overflow: hidden;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
 
     #controls {
@@ -23,18 +22,11 @@
       max-height: 85vh;
       background-color: #e0f0ff;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    textarea, select, button, input[type="range"] {
-      font-size: 1em;
-      padding: 10px;
-      margin: 5px;
-      width: 90%;
-      max-width: 500px;
+      flex-shrink: 0;
     }
 
     #scriptDisplay {
-      height: 15vh;
+      flex-grow: 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -43,6 +35,15 @@
       white-space: pre-line;
       max-width: 90%;
       margin: 0 auto;
+      overflow-y: auto;
+    }
+
+    textarea, select, button, input[type="range"] {
+      font-size: 1em;
+      padding: 10px;
+      margin: 5px;
+      width: 90%;
+      max-width: 500px;
     }
   </style>
 </head>
